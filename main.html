@@ -10,7 +10,23 @@
 	<script>
 		function secondHighest(arr) {
 			//Write your code here
-			
+			let maxi=arr[0];
+			let maxi2=-99;
+			for(let i=0;i<arr.length;i++)
+				{
+					if(arr[i]>maxi)
+					{
+						maxi=arr[i];
+					}
+				}
+			for(let i=0;i<arr.length;i++)
+				{
+					if(arr[i]<maxi&&arr[i]>maxi2)
+					{
+						maxi2=arr[i];
+					}
+				}
+			return maxi2;
 		}
 
 		function Main() {
